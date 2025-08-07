@@ -199,7 +199,7 @@ option[disabled] {
     padding-bottom: 50px;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 
@@ -268,13 +268,7 @@ body.active .countries .card h4 span {
     color: #111517ad;
 }
 
-.modal {
-    border: 1px solid red;
-    width: 900px;
-    margin: 0 auto;
-    position: absolute;
-    display: none;
-}
+
 
 .loader {
     background-color: orange;
@@ -289,12 +283,13 @@ body.active .countries .card h4 span {
     background-color: inherit;
     display: none;
 }
+
 .loader.active {
     display: flex;
 }
 
 
-.loader .top{
+.loader .top {
     width: 25px;
     height: 25px;
     background-color: blue;
@@ -345,8 +340,8 @@ body.active .countries .card h4 span {
 
 @media (max-width:467px) {
     .container {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
 
     }
 
@@ -366,6 +361,7 @@ body.active .countries .card h4 span {
         position: fixed;
         top: 65px;
         left: 0px;
+        height: 15vh;
     }
 
     .hero .row form {
@@ -385,13 +381,13 @@ body.active .countries .card h4 span {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
-        height: 500px;
+        height: 75vh;
     }
 
     .countries .card {
         width: 48%;
-        height: 280px;
-        margin-bottom: 20px;
+        height: 265px;
+        margin-bottom: 10px;
     }
 
     .countries .card img {
@@ -400,12 +396,13 @@ body.active .countries .card h4 span {
     }
 
     .card .info-card h3 {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: -10px;
     }
 
     .card .info-card h4 {
         font-size: 14px;
+        letter-spacing: 0.2px;
     }
 
     .card .info-card h4 span {
@@ -414,5 +411,14 @@ body.active .countries .card h4 span {
 
     .hero .row select {
         padding: 8px 40px 8px 20px;
+        margin-bottom: 10px;
+        outline: none;
+    }
+
+    .hero .row select option {
+        outline: none;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
     }
 }
