@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 15px 0px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.151);
+    position: fixed;
+    top: 0;
+    background-color: white;
+    /* padding: 15px; */
+    z-index: 1000;
+    width: 100%;
+}
+
+body.active nav {
+    background-color: #2B3844;
+    box-shadow: 0px 2px 4px 0px #0000000E;
+}
+
+nav h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+
+body.active h1 {
+    color: #FFFFFF;
+}
+
+body.active nav .btn button {
+    box-shadow: 0px 0px 8px 1px white;
+}
+
+nav .btn button {
+    padding: 8px 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 12px;
+}
+
+nav .btn button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+nav .btn button:nth-child(2) {
+    display: none;
+}
+
+/* body.active nav .btn button:nth-child(1) {
+    display: none;
+} */
+body.active nav .btn button:nth-child(2) {
+    display: none;
+}
+
+
+
+body.active button {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: rgba(184, 178, 178, 0.123);
+    padding-top: 60px;
+}
+
+body.active {
+    background-color: #202C36;
+}
+
+
+
+.hero .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: sticky; */
+    padding: 20px;
+    background-color: #d4cfcf0a;
+}
+
+body.active .hero .container .row {
+    background-color: #202C36;
+}
+
+.hero .row form {
+    /* border: 1px solid blue; */
+    padding: 5px 10px 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.189);
+    cursor: pointer;
+
+}
+
+body.active .hero .row form {
+    color: #FFFFFF;
+    background-color: #2B3844;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+}
+
+.hero .row form input::placeholder {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #848484;
+}
+
+body.active .hero .row form input::placeholder {
+    color: #FFFFFF;
+}
+
+body.active .hero .row form input {
+    background-color: #2B3844;
+    color: #FFFFFF;
+}
+
+.hero .row form input {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    width: 400px;
+    padding: 10px;
+    padding-right: 180px;
+    color: rgba(0, 0, 0, 0.792);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero .row select {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    outline: none;
+    cursor: pointer;
+}
+
+body.active .hero .row select {
+    background-color: #2B3844;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+
+}
+
+body.active option[disabled] {
+    color: #73808b2c;
+}
+
+option[disabled] {
+    color: gray;
+}
+
+
+.countries {
+    height: 580px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    gap: 25px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+
+body.active .countries .card {
+    background-color: #2B3844;
+}
+
+body.active .countries .card h3 {
+    color: #FFFFFF;
+}
+
+body.active .countries .card h4 {
+    color: #FFFFFF;
+}
+
+body.active .countries .card h4 span {
+    color: #ffffffb1;
+}
+
+.countries .card {
+    /* border: 1px solid blue; */
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.173);
+    cursor: pointer;
+}
+
+.countries .card.hidden {
+    display: none;
+}
+
+.countries .card img {
+    width: 100%;
+    height: 120px;
+}
+
+.card .info-card {
+    padding: 15px 15px 20px 15px;
+}
+
+.card .info-card h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #111517;
+    margin-bottom: 10px;
+}
+
+.card .info-card h4 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    color: #111517;
+}
+
+.card .info-card h4 span {
+    font-weight: 500;
+    color: #111517ad;
+}
+
+.modal {
+    border: 1px solid red;
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+}
+
+.loader {
+    background-color: orange;
+    height: 80vh;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    top: 100px;
+    background-color: inherit;
+    display: none;
+}
+.loader.active {
+    display: flex;
+}
+
+
+.loader .top{
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50px;
+    animation: Animation 1.1s linear infinite;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.loader .top:nth-child(1) {
+    animation-delay: 0.2s;
+    background-color: rgb(43, 0, 255);
+}
+
+.loader .top:nth-child(2) {
+    animation-delay: 0.4s;
+    background-color: rgba(17, 255, 0, 0.37);
+}
+
+.loader .top:nth-child(3) {
+    animation-delay: 0.6s;
+    background-color: rgba(225, 255, 0, 0.539);
+}
+
+.loader .top:nth-child(4) {
+    animation-delay: 1s;
+    background-color: rgb(0, 238, 255);
+}
+
+
+@keyframes Animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+
+    36% {
+        transform: translateY(-12px);
+    }
+
+    72% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:467px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    body {
+        padding-top: 170px;
+    }
+
+    nav h1 {
+        font-size: 14px;
+    }
+
+    .hero .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        position: fixed;
+        top: 65px;
+        left: 0px;
+    }
+
+    .hero .row form {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: -10px;
+        height: 40px;
+    }
+
+    .hero .row form input {
+        width: 100%;
+    }
+
+    .countries {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 500px;
+    }
+
+    .countries .card {
+        width: 48%;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    .countries .card img {
+        height: 100px;
+        width: 100%;
+    }
+
+    .card .info-card h3 {
+        font-size: 16px;
+        margin-top: -10px;
+    }
+
+    .card .info-card h4 {
+        font-size: 14px;
+    }
+
+    .card .info-card h4 span {
+        font-size: 13px;
+    }
+
+    .hero .row select {
+        padding: 8px 40px 8px 20px;
+    }
+}
