@@ -271,7 +271,7 @@ body.active .countries .card h4 span {
 
 
 .loader {
-    background-color: rgba(255, 255, 255, 0.841);
+    /* background-color: rgba(255, 255, 255, 0.841); */
     height: 100vh;
     width: 100%;
     display: flex;
@@ -281,6 +281,7 @@ body.active .countries .card h4 span {
     position: fixed;
     top: 0px;
     z-index: 2000;
+    backdrop-filter: blur(4px);
     display: none;
 }
 
@@ -342,7 +343,6 @@ body.active .countries .card h4 span {
     .container {
         margin-left: 10px;
         margin-right: 10px;
-
     }
 
     body {
@@ -416,9 +416,10 @@ body.active .countries .card h4 span {
         padding: 8px 40px 8px 20px;
         margin-bottom: 10px;
         outline: none;
+        width: 100%;
     }
 
-    .hero .row select option {
+    .hero .row select option{
         outline: none;
         font-family: "Nunito Sans", sans-serif;
         font-weight: 600;
